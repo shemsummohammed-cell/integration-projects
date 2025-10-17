@@ -1,0 +1,23 @@
+Generative vs Agentic AI: Shaping the Future of AI Collaboration
+
+Generative AI
+  Works in a prompt → output mode (reactive).
+  Generates content such as text, images, or code.
+  Focuses on creativity, ideation, and expression.
+  Example: ChatGPT creating text or code when prompted.
+
+Agentic AI
+  Goal-driven and proactive — plans, acts, and adapts autonomously.
+  Integrates reasoning, memory, and external tools/APIs.
+  Can perform multi-step tasks without constant human input.
+  Example: An AI that books travel, manages schedules, or executes workflows.
+
+Key Differences
+
+| Aspect       | Generative AI          | Agentic AI                              |
+| ------------ | ---------------------- | --------------------------------------- |
+| Behavior     | Reactive               | Proactive                               |
+| Focus        | Content generation     | Task execution                          |
+| Control      | Human-driven           | Goal-driven                             |
+| Capabilities | Creativity, generation | Reasoning, action                       |
+| Example      | Text/image generation  | Personal assistant, workflow automation |
