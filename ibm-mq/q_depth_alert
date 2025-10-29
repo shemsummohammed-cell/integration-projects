@@ -1,0 +1,10 @@
+# Sample script to check depth and send alert
+QMGR=MY_QMGR
+QUEUE=MY.QUEUE
+THRESHOLD=100
+
+CURRENT_DEPTH=$(echo "display qstatus('$QUEUE') curdepth" | runmqsc $QMGR | grep CURDEPTH | awk -F'[()]' '{print $2}')
+
+if [ "$CURRENT_DEPTH" -gt "$THRESHOLD" ]; then
+    echo "ALERT: Queue $QUEUE depth is $CURRENT_DEPTH" | mail -s "MQ Alert" admin@company.com
+fi
