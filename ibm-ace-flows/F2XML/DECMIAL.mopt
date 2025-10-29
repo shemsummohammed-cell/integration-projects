@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mopt:mopt xmlns:mopt="http://www.ibm.com/websphere/dtx/ui/me/mopt">
+  <mopt:info activeInputCardNumber="0" activeOutputCardNumber="0" currentCardNumber="0" currentMapNumber="1" version="12.0"/>
+  <mopt:composition checksum="4045095282">
+    <mopt:mapinfos name="DECIMap1" number="1" subMapCount="0"/>
+  </mopt:composition>
+  <mopt:debug/>
+  <mopt:runresults/>
+  <mopt:editor>
+    <mopt:expansions cardName="DECI" mapName="DECIMap1"/>
+    <mopt:expansions cardName="DECIOUT" mapName="DECIMap1"/>
+    <mopt:mapstates name=""/>
+    <mopt:mapstates name="DECIMap1">
+      <mopt:cardstates index="0" name="DECI" number="1" output="false" side="0"/>
+      <mopt:cardstates index="0" name="DECIOUT" number="1" output="true" side="2"/>
+    </mopt:mapstates>
+  </mopt:editor>
+</mopt:mopt>

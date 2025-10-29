@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mopt:mopt xmlns:mopt="http://www.ibm.com/websphere/dtx/ui/me/mopt">
+  <mopt:info activeInputCardNumber="0" activeOutputCardNumber="0" currentCardNumber="0" currentMapNumber="2" version="12.0"/>
+  <mopt:composition checksum="1941219862">
+    <mopt:mapinfos name="FIXTOXML" number="1" subMapCount="2">
+      <mopt:funcMapInfos cardName="FIXXMLOUT" count="1" name="FMAP"/>
+      <mopt:funcMapInfos cardName="FIXXMLOUT" count="1" name="FMAP"/>
+    </mopt:mapinfos>
+    <mopt:mapinfos name="FMAP" number="2" subMapCount="0"/>
+  </mopt:composition>
+  <mopt:debug/>
+  <mopt:runresults/>
+  <mopt:editor>
+    <mopt:expansions cardName="FIXTOXMLIN" isOutput="false" mapName="FIXTOXML">
+      <mopt:path>5:3</mopt:path>
+    </mopt:expansions>
+    <mopt:expansions cardName="FIXXMLOUT" isOutput="true" mapName="FIXTOXML">
+      <mopt:path>Decl Prolog:FIXXMLOUT</mopt:path>
+      <mopt:path>ElemDecl SCHOOL Element:FIXXMLOUT</mopt:path>
+      <mopt:path>ElemDecl CLASS Comp:ElemDecl SCHOOL Element:FIXXMLOUT</mopt:path>
+    </mopt:expansions>
+    <mopt:expansions cardName="In1" mapName="F1MAP"/>
+    <mopt:expansions cardName="Out" isOutput="true" mapName="FMAP">
+      <mopt:path>Out</mopt:path>
+    </mopt:expansions>
+    <mopt:mapstates name=""/>
+    <mopt:mapstates name="FIXTOXML">
+      <mopt:cardstates index="0" name="FIXTOXMLIN" number="1" output="false" side="0"/>
+      <mopt:cardstates index="0" name="FIXXMLOUT" number="1" output="true" side="2"/>
+    </mopt:mapstates>
+    <mopt:mapstates name="F1MAP">
+      <mopt:cardstates index="0" name="In1" number="1" output="false" side="0"/>
+      <mopt:cardstates index="0" name="Out" number="1" output="true" side="2"/>
+    </mopt:mapstates>
+    <mopt:mapstates name="FMAP">
+      <mopt:cardstates index="0" name="In1" number="1" output="false" side="0"/>
+      <mopt:cardstates index="0" name="Out" number="1" output="true" side="2"/>
+    </mopt:mapstates>
+  </mopt:editor>
+</mopt:mopt>

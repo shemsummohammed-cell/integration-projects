@@ -1,0 +1,23 @@
+
+S112 - Unused DESCRIPTION deleted: 'COURSE Comp STUDENT Comp CLASS Comp SCHOOL Element XSD' (at index 10) (warning).
+
+S112 - Unused DESCRIPTION deleted: 'NAME Comp STUDENT Comp CLASS Comp SCHOOL Element XSD' (at index 9) (warning).
+
+S112 - Unused DESCRIPTION deleted: 'FEE Comp STUDENT Comp CLASS Comp SCHOOL Element XSD' (at index 8) (warning).
+
+S112 - Unused DESCRIPTION deleted: 'ElemDecl STUDENT Comp CLASS Comp SCHOOL Element XSD' (at index 7) (warning).
+
+S112 - Unused DESCRIPTION deleted: 'ElemDecl CLASS Comp SCHOOL Element XSD' (at index 6) (warning).
+
+S112 - Unused DESCRIPTION deleted: 'ElemDecl SCHOOL Element XSD' (at index 5) (warning).
+
+S112 - Unused DESCRIPTION deleted: 'standalone Prolog XSD' (at index 4) (warning).
+
+S112 - Unused DESCRIPTION deleted: 'encoding Prolog XSD' (at index 3) (warning).
+
+S112 - Unused DESCRIPTION deleted: 'version Prolog XSD' (at index 2) (warning).
+
+S112 - Unused DESCRIPTION deleted: 'Decl Prolog XSD' (at index 0) (warning).
+
+
+   End of Analysis Messages.

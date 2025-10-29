@@ -1,0 +1,9 @@
+
+L248 - The Padded To length for ITEM - 'ENAME Root'
+   must be greater than zero. (error)
+
+L218 - RELEASE CHARACTER for TYPE - 'EREC Root' had no value.
+   It has been reset to none. (warning)
+
+
+   End of Analysis Messages.

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mopt:mopt xmlns:mopt="http://www.ibm.com/websphere/dtx/ui/me/mopt">
+  <mopt:info activeInputCardNumber="1" activeOutputCardNumber="0" currentCardNumber="1" currentMapNumber="3" version="12.0"/>
+  <mopt:composition checksum="3757288756">
+    <mopt:mapinfos name="XMLTOXMLMap1" number="1" subMapCount="2">
+      <mopt:funcMapInfos cardName="XMLTOFIX" count="1" name="FMAP2"/>
+      <mopt:funcMapInfos cardName="XMLTOFIX" count="1" name="FMAP2"/>
+    </mopt:mapinfos>
+    <mopt:mapinfos name="FMAP2" number="3" subMapCount="0"/>
+  </mopt:composition>
+  <mopt:debug/>
+  <mopt:runresults>
+    <mopt:results mapName="XMLTOXMLMap1"/>
+  </mopt:runresults>
+  <mopt:editor>
+    <mopt:expansions cardName="XMLTOFIXINCARD" isOutput="false" mapName="XMLTOXMLMap1">
+      <mopt:path>31</mopt:path>
+      <mopt:path>30:31</mopt:path>
+    </mopt:expansions>
+    <mopt:expansions cardName="XMLTOFIX" isOutput="true" mapName="XMLTOXMLMap1">
+      <mopt:path>EREC:XMLTOFIX</mopt:path>
+    </mopt:expansions>
+    <mopt:expansions cardName="In1" isOutput="false" mapName="FUNMAP">
+      <mopt:path>30:31</mopt:path>
+      <mopt:path>29:30:31</mopt:path>
+      <mopt:path>28:29:30:31</mopt:path>
+    </mopt:expansions>
+    <mopt:expansions cardName="In1" mapName="FMAP123"/>
+    <mopt:expansions cardName="In1" mapName="FMAP2"/>
+    <mopt:mapstates name=""/>
+    <mopt:mapstates name="XMLTOXMLMap1">
+      <mopt:cardstates index="0" name="XMLTOFIXINCARD" number="1" output="false" side="0"/>
+      <mopt:cardstates index="0" name="XMLTOFIX" number="1" output="true" side="2"/>
+    </mopt:mapstates>
+    <mopt:mapstates name="FUNMAP">
+      <mopt:cardstates index="0" name="In1" number="1" output="false" side="0"/>
+      <mopt:cardstates index="0" name="Out" number="1" output="true" side="2"/>
+    </mopt:mapstates>
+    <mopt:mapstates name="FMAP123">
+      <mopt:cardstates index="0" name="In1" number="1" output="false" side="0"/>
+      <mopt:cardstates index="0" name="Out" number="1" output="true" side="2"/>
+    </mopt:mapstates>
+    <mopt:mapstates name="FMAP2">
+      <mopt:cardstates index="0" name="In1" number="1" output="false" side="0"/>
+      <mopt:cardstates index="0" name="Out" number="1" output="true" side="2"/>
+    </mopt:mapstates>
+  </mopt:editor>
+</mopt:mopt>

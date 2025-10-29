@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="NAME" type="xsd:string">
+    <xsd:annotation>
+      <xsd:appinfo source="WMQI_APPINFO">
+        <tdsElemRep dataPattern="" encodingNull="NullLogicalValue" messageSetDefaultRep="Text2" precision="-1" tag=""/>
+      </xsd:appinfo>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:element name="SAL" type="xsd:int">
+    <xsd:annotation>
+      <xsd:appinfo source="WMQI_APPINFO">
+        <tdsElemRep dataPattern="" messageSetDefaultRep="Text2" precision="-1" tag=""/>
+      </xsd:appinfo>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:element name="AGE" type="xsd:int">
+    <xsd:annotation>
+      <xsd:appinfo source="WMQI_APPINFO">
+        <tdsElemRep dataPattern="" messageSetDefaultRep="Text2" precision="-1" tag=""/>
+      </xsd:appinfo>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:element name="STATE" type="xsd:string">
+    <xsd:annotation>
+      <xsd:appinfo source="WMQI_APPINFO">
+        <tdsElemRep dataPattern="" messageSetDefaultRep="Text2" precision="-1" tag=""/>
+      </xsd:appinfo>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:element name="SSN" type="xsd:int">
+    <xsd:annotation>
+      <xsd:appinfo source="WMQI_APPINFO">
+        <tdsElemRep dataPattern="" messageSetDefaultRep="Text2" precision="-1" tag=""/>
+      </xsd:appinfo>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:element name="ORG" type="xsd:string">
+    <xsd:annotation>
+      <xsd:appinfo source="WMQI_APPINFO">
+        <tdsElemRep dataPattern="" messageSetDefaultRep="Text2" precision="-1" tag=""/>
+      </xsd:appinfo>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:element name="ROLE" type="xsd:string">
+    <xsd:annotation>
+      <xsd:appinfo source="WMQI_APPINFO">
+        <tdsElemRep dataPattern="" messageSetDefaultRep="Text2" precision="-1" render="Characters" tag=""/>
+      </xsd:appinfo>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:complexType name="EMP">
+    <xsd:annotation>
+      <xsd:appinfo source="WMQI_APPINFO">
+        <tdsStructRep dataElementSeparation="AllElementsDelimited" delimiter="*" messageSetDefaultRep="Text1"/>
+      </xsd:appinfo>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element ref="NAME"/>
+      <xsd:element ref="SAL"/>
+      <xsd:element ref="AGE"/>
+      <xsd:element ref="STATE"/>
+      <xsd:element ref="SSN"/>
+      <xsd:element ref="ORG"/>
+      <xsd:element ref="ROLE"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="EMP" type="EMP">
+    <xsd:annotation>
+      <xsd:appinfo source="WMQI_APPINFO">
+        <MRMessage messageDefinition="/0/EMP;XSDElementDeclaration=7$MRObject"/>
+      </xsd:appinfo>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:complexType name="EMPINFO">
+    <xsd:annotation>
+      <xsd:appinfo source="WMQI_APPINFO">
+        <tdsStructRep dataElementSeparation="AllElementsDelimited" delimiter="&lt;CR&gt;&lt;LF&gt;" messageSetDefaultRep="Text1"/>
+      </xsd:appinfo>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" ref="EMP"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="EMPINFO" type="EMPINFO">
+    <xsd:annotation>
+      <xsd:appinfo source="WMQI_APPINFO">
+        <MRMessage messageDefinition="/0/EMPINFO;XSDElementDeclaration=8$MRObject"/>
+      </xsd:appinfo>
+    </xsd:annotation>
+  </xsd:element>
+</xsd:schema>

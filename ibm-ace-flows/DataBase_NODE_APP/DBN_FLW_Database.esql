@@ -1,0 +1,25 @@
+
+
+CREATE DATABASE MODULE DBN_FLW_Database
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		
+		--DECLARE INREF REFERENCE TO Root.XMLNSC.EMP;
+		--INSERT INTO Database.EMP VALUES(INREF.EID, INREF.ENAME, INREF.EAGE);
+		--UPDATE Database.EMP AS Q SET EAGE =23 WHERE Q.ENAME = 'MAX';
+		----UPDATE Database.EMP AS Q SET ENAME = BOX WHERE EID = 300; 
+		--DELETE FROM Database.EMP AS Q WHERE Q.ENAME = 'MOMO';
+		
+		---since we dont use Inputroot and outputroot so Envi is used too give output
+		-- 'THE' is used to SELECT multiple columns records as bellow
+SET Environment.Varible.dbrec.rec=THE(SELECT Q.EID, Q.ENAME, Q.EAGE FROM Database.EMP as Q WHERE Q.ENAME='MAX');
+SET Environment.Varible.dbrec.rec[]= SELECT Q.* FROM Database.EMP AS Q;
+		
+		--used[] is to to insert mulitple records  
+		
+		COMMIT;
+		
+		RETURN TRUE;
+	END;
+
+END MODULE;

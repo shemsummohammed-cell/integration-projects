@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:dfdl="http://www.ogf.org/dfdl/dfdl-1.0/" xmlns:fmt="http://www.ibm.com/dfdl/GeneralPurposeFormat" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	
+
+    <xsd:import namespace="http://www.ibm.com/dfdl/GeneralPurposeFormat" schemaLocation="IBMdefined/GeneralPurposeFormat.xsd"/>
+        <xsd:element ibmSchExtn:docRoot="true" name="EMPINFO">
+    <xsd:complexType>
+      <xsd:sequence dfdl:separator="%CR;%LF;">
+        <xsd:element dfdl:occursCountKind="implicit" maxOccurs="unbounded" name="EMP" type="EMP"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:complexType name="EMP">
+    <xsd:sequence dfdl:separator="*">
+      <xsd:element name="NAME" type="xsd:string"/>
+      <xsd:element dfdl:occursCountKind="implicit" dfdl:textNumberPattern="#0" minOccurs="0" name="SAL" type="xsd:integer"/>
+      <xsd:element dfdl:occursCountKind="implicit" dfdl:textNumberPattern="#0" minOccurs="0" name="AGE" type="xsd:integer"/>
+      <xsd:element dfdl:occursCountKind="implicit" minOccurs="0" name="STATE" type="xsd:string"/>
+      <xsd:element dfdl:occursCountKind="implicit" dfdl:textNumberPattern="#0" minOccurs="0" name="SSN" type="xsd:integer"/>
+      <xsd:element dfdl:occursCountKind="implicit" minOccurs="0" name="ORG" type="xsd:string"/>
+      <xsd:element dfdl:occursCountKind="implicit" minOccurs="0" name="ROLE" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+    <xsd:annotation>
+		<xsd:appinfo source="http://www.ogf.org/dfdl/">
+			<dfdl:format ref="fmt:GeneralPurposeFormat" separator="" separatorSuppressionPolicy="anyEmpty"/>
+		</xsd:appinfo>
+	</xsd:annotation>
+	
+
+</xsd:schema>

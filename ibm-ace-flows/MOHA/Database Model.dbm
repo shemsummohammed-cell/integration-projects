@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<xmi:XMI xmlns:datamodelversion="http://www.ibm.com/com.ibm.datatools.core/model/data/1.3.0.0" xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DB2Model="http:///com/ibm/db/models/db2/db2.ecore" xmlns:LUW="http:///com/ibm/db/models/db2/luw.ecore" xmlns:SQLAccessControl="http:///org/eclipse/datatools/modelbase/sql/accesscontrol.ecore" xmlns:SQLDataTypes="http:///org/eclipse/datatools/modelbase/sql/datatypes.ecore">
+  <LUW:LUWDatabase xmi:id="_C6hA8QwWEeiqkNRVSvp__A" name="MOHA" vendor="DB2 UDB" version="V10.1" schemas="_DAJu4AwWEeiqkNRVSvp__A" authorizationIds="_DAK9AAwWEeiqkNRVSvp__A _DAJu4QwWEeiqkNRVSvp__A _DAKV8QwWEeiqkNRVSvp__A">
+    <eAnnotations xmi:id="_C6hoAAwWEeiqkNRVSvp__A" source="ConnectionURI">
+      <details xmi:id="_C6hoAQwWEeiqkNRVSvp__A" key="ConnectionKey" value="MOHA1"/>
+    </eAnnotations>
+  </LUW:LUWDatabase>
+  <DB2Model:DB2Schema xmi:id="_DAJu4AwWEeiqkNRVSvp__A" name="BLACK" privileges="_DAKV8AwWEeiqkNRVSvp__A" tables="_DALkEAwWEeiqkNRVSvp__A" database="_C6hA8QwWEeiqkNRVSvp__A"/>
+  <SQLAccessControl:Group xmi:id="_DAJu4QwWEeiqkNRVSvp__A" name="PUBLIC" description="" Database="_C6hA8QwWEeiqkNRVSvp__A">
+    <receivedPrivilege xmi:id="_DAKV8AwWEeiqkNRVSvp__A" action="CREATEIN" grantor="_DAKV8QwWEeiqkNRVSvp__A" object="_DAJu4AwWEeiqkNRVSvp__A"/>
+  </SQLAccessControl:Group>
+  <SQLAccessControl:User xmi:id="_DAKV8QwWEeiqkNRVSvp__A" name="SYSIBM" Database="_C6hA8QwWEeiqkNRVSvp__A" grantedPrivilege="_DAK9AQwWEeiqkNRVSvp__A _DAK9AgwWEeiqkNRVSvp__A _DAK9AwwWEeiqkNRVSvp__A _DAK9BAwWEeiqkNRVSvp__A _DAK9BQwWEeiqkNRVSvp__A _DAK9BgwWEeiqkNRVSvp__A _DAKV8AwWEeiqkNRVSvp__A _DAK9BwwWEeiqkNRVSvp__A _DAK9CAwWEeiqkNRVSvp__A"/>
+  <SQLAccessControl:User xmi:id="_DAK9AAwWEeiqkNRVSvp__A" name="BLACK" description="" Database="_C6hA8QwWEeiqkNRVSvp__A">
+    <receivedPrivilege xmi:id="_DAK9AQwWEeiqkNRVSvp__A" grantable="true" action="REFERENCES" grantor="_DAKV8QwWEeiqkNRVSvp__A" object="_DALkEAwWEeiqkNRVSvp__A"/>
+    <receivedPrivilege xmi:id="_DAK9AgwWEeiqkNRVSvp__A" grantable="true" action="INSERT" grantor="_DAKV8QwWEeiqkNRVSvp__A" object="_DALkEAwWEeiqkNRVSvp__A"/>
+    <receivedPrivilege xmi:id="_DAK9AwwWEeiqkNRVSvp__A" grantable="true" action="ALTER" grantor="_DAKV8QwWEeiqkNRVSvp__A" object="_DALkEAwWEeiqkNRVSvp__A"/>
+    <receivedPrivilege xmi:id="_DAK9BAwWEeiqkNRVSvp__A" grantable="true" action="DELETE" grantor="_DAKV8QwWEeiqkNRVSvp__A" object="_DALkEAwWEeiqkNRVSvp__A"/>
+    <receivedPrivilege xmi:id="_DAK9BQwWEeiqkNRVSvp__A" grantable="true" action="INDEX" grantor="_DAKV8QwWEeiqkNRVSvp__A" object="_DALkEAwWEeiqkNRVSvp__A"/>
+    <receivedPrivilege xmi:id="_DAK9BgwWEeiqkNRVSvp__A" grantable="true" action="UPDATE" grantor="_DAKV8QwWEeiqkNRVSvp__A" object="_DALkEAwWEeiqkNRVSvp__A"/>
+    <receivedPrivilege xmi:id="_DAK9BwwWEeiqkNRVSvp__A" grantable="true" action="SELECT" grantor="_DAKV8QwWEeiqkNRVSvp__A" object="_DALkEAwWEeiqkNRVSvp__A"/>
+    <receivedPrivilege xmi:id="_DAK9CAwWEeiqkNRVSvp__A" action="CONTROL" grantor="_DAKV8QwWEeiqkNRVSvp__A" object="_DALkEAwWEeiqkNRVSvp__A"/>
+  </SQLAccessControl:User>
+  <LUW:LUWTable xmi:id="_DALkEAwWEeiqkNRVSvp__A" name="STU" privileges="_DAK9CAwWEeiqkNRVSvp__A _DAK9AwwWEeiqkNRVSvp__A _DAK9BAwWEeiqkNRVSvp__A _DAK9BQwWEeiqkNRVSvp__A _DAK9AgwWEeiqkNRVSvp__A _DAK9BwwWEeiqkNRVSvp__A _DAK9AQwWEeiqkNRVSvp__A _DAK9BgwWEeiqkNRVSvp__A" schema="_DAJu4AwWEeiqkNRVSvp__A" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_DALkEQwWEeiqkNRVSvp__A" name="STUID">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_DALkEgwWEeiqkNRVSvp__A" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_DALkEwwWEeiqkNRVSvp__A" name="STUNAME">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_DALkFAwWEeiqkNRVSvp__A" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="15"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_DALkFQwWEeiqkNRVSvp__A" name="STUCOURSE">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_DALkFgwWEeiqkNRVSvp__A" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="10"/>
+    </columns>
+  </LUW:LUWTable>
+</xmi:XMI>
