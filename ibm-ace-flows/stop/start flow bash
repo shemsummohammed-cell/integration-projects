@@ -1,0 +1,6 @@
+#!/bin/bash
+# Stop all flows in integration server
+mqsistop NODENAME -i SERVERNAME
+sleep 5
+# Start flows
+mqsistart NODENAME -i SERVERNAME
